@@ -8,6 +8,6 @@ if (!cmd.args.length) {
   console.log(chalk.cyan.bold.underline('Enter something'));
 }
 else {
-  console.log(chalk.cyan.bold.underline('Here you go! you entered ', cmd.args));
+  console.log(chalk.cyan.bold.underline('What you entered : ' + cmd.args + ' and what you get : ' + processor.fizzOrBuzz(cmd.args)));
 }
 
