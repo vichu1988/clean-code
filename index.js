@@ -1,5 +1,6 @@
 var cmd = require('commander');
 var chalk = require('chalk');
+var processor = require('./processor');
 
 cmd.version('0.0.1').usage('<keywords').parse(process.argv);
 
