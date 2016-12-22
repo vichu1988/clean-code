@@ -9,21 +9,7 @@ function divisibleBy(input, divisor) {
 
 function fizzOrBuzz(input) {
 
-  switch (input) {
-    case (divisibleBy(input, 3)):
-      return constants.FIZZ;
-      break;
-
-    case (divisibleBy(input, 5)):
-      return constants.BUZZ;
-
-    case (divisibleBy(input, 3) && divisibleBy(input, 5)):
-      return constants.FIZZBUZZ;
-
-    default:
-      return input;
-
-  }
+  return divisibleBy(input, 3) ? (divisibleBy(input, 5) ? constants.FIZZBUZZ : constants.FIZZ) : (divisibleBy(input, 5) ? constants.BUZZ : input);
 
 }
 
